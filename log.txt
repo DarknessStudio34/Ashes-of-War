@@ -1,0 +1,3 @@
+20/01/23
+-readme.md criado
+-log.tx criado
