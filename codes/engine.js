@@ -21,5 +21,12 @@ function frames (){
   text (mouseX, 40, 10)
 }
 function screenConfig (){
-  
+  if (screenX > screenY + screenY * 0.80){
+    propor = 20.9
+    //20:9
+  }
+  else {
+    propor = 16.9
+    //16:9
+  }
 }
