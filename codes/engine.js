@@ -11,7 +11,13 @@ function preload (){
   
 }
 function mouseClicked (){
-  
+  if(mouseX > screenX - screenX * 0.10 && mouseY < screenY - screenY * 0.90){
+    toggleFullScreen();
+    fscreen = true;
+    if(screenY > screenX){
+      alert("Vire seu dispositivo na horizontal e recarregue a página, se este erro persistir ative a rotação automática no painel de notificações e tente o passo anterior.");
+    }
+  }
 }
 function frames (){
   fill (0);
