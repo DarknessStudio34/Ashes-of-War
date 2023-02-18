@@ -1,4 +1,4 @@
-var screenX = window.screen.width, screenY = window.screen.height
+var screenX = windowWidth, screenY = windowHeight
 function setup (){
   createCanvas(screenX, screenY);
 }
@@ -6,6 +6,17 @@ function draw (){
   screenConfig();
   cenarios();
   frames();
+}
+var cmd = false
+function cmds (){
+  if(keyIsDown(118) && keyIsDown(67)){
+    cmd = true;
+    if (cmd == true){cmd = false}
+  }
+  if(cmd == true){
+    rect(screenX * 0.70, 0, screenX * 0.30, screenY * 0.30)
+    describe(gray rect)
+  }
 }
 function preload (){
   
