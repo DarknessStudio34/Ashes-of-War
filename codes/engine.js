@@ -1,8 +1,7 @@
 function setup (){
   createCanvas(windowWidth, windowHeight);
-  screenX = windowWidth; screenY = windowHeight
 }
-var screenX, screenY
+var screenX = window.screen.width, screenY = window.screen.height
 function draw (){
   screenConfig();
   cenarios();
