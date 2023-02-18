@@ -15,7 +15,6 @@ function cmds (){
   }
   if(cmd == true){
     rect(screenX * 0.70, 0, screenX * 0.30, screenY * 0.30)
-    describe(gray rect)
   }
 }
 function preload (){
