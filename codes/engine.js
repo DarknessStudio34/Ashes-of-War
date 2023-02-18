@@ -6,6 +6,7 @@ function draw (){
   screenConfig();
   cenarios();
   frames();
+  cmds();
 }
 var cmd = false
 function cmds (){
