@@ -21,9 +21,10 @@ function cmds (){
     rect(screenX * 0.70, 0, screenX * 0.30, screenY * 0.30)
   }
 }
-
+var loading 
 function preload (){
-  
+  loading.20_9: loadImage('assets/tldLoad.20.9.png'),
+  loading.16_9: loadImage('assets/tldLoad.16.9.png')
 }
 
 function mouseClicked (){
