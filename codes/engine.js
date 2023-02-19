@@ -1,16 +1,19 @@
 function setup (){
   createCanvas(windowWidth, windowHeight);
 }
+
 var screenX = window.screen.width, screenY = window.screen.height
+
 function draw (){
   screenConfig();
   cenarios();
   frames();
   cmds();
 }
+
 var cmd = false
 function cmds (){
-  if(keyIsDown(118) && keyIsDown(67)){
+  if(keyIsDown(118)){
     cmd = true;
     if (cmd == true){cmd = false}
   }
@@ -18,11 +21,13 @@ function cmds (){
     rect(screenX * 0.70, 0, screenX * 0.30, screenY * 0.30)
   }
 }
+
 function preload (){
   
 }
+
 function mouseClicked (){
-  if(mouseX > screenX - screenX * 0.10 && mouseY < screenY - screenY * 0.90){
+  if(mouseX > screenX * 0.90 && mouseY < screenY * 0.10){
     toggleFullScreen();
     fscreen = true;
     if(screenY > screenX){
@@ -30,6 +35,7 @@ function mouseClicked (){
     }
   }
 }
+
 function frames (){
   fill (0);
   if (c == 1 || c == 1.2){fill (220)}
@@ -37,6 +43,7 @@ function frames (){
   text (mouseY, 40, 30);
   text (mouseX, 40, 10)
 }
+
 function screenConfig (){
   if (screenX > screenY + screenY * 0.80){
     propor = 20.9
