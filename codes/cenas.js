@@ -11,8 +11,10 @@ function cenarios (){
    else if (propor == 16.9){
      if(c == 0){
        background (loading.tld16_9)
-       //tld16_1();
-     }
+       tld16_1();
+     } else if (c == 1){
+         background(graphics.bg)
+       }
    }
 }
 var graphics = {};
