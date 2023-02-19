@@ -3,7 +3,9 @@ function cenarios (){
    if (propor == 20.9){
      if(c == 0){
        background (loading.20_9)
-       tld20_1();
+       particFun(6, 400, 400, 600, 800);
+       particFun(6, 400, 400, 600, 800);
+       particFun(6, 400, 400, 600, 800);
      }
    }
    else if (propor == 16.9){
