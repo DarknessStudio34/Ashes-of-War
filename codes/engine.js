@@ -34,7 +34,7 @@ function mouseClicked (){
     if(screenY > screenX){
       alert("Vire seu dispositivo na horizontal e recarregue a página, se este erro persistir ative a rotação automática no painel de notificações e tente o passo anterior.");
     }
-  }
+  } 
 }
 
 function frames (){
