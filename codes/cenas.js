@@ -16,15 +16,13 @@ function cenarios (){
    }
 }
 var graphics = {};
-/*function tld20_1 (){
-  var img1 = loadImage('assets/1.png');
-  var img2 = loadImage('assets/2.png');
-  var img3 = loadImage('assets/3.png');
+function tld20_1 (){
+  var img1 = loadImage('assets/20_9/int/mp_bg.png');
   
-  Promise.all([img1, img2, img3]).then(function(values) {
+  Promise.all([img1]).then(function(values) {
     graphics.bg = values[0];
-    graphics.bt = values[1];
-    graphics.int = values[2];
+    /*graphics.bt = values[1];
+    graphics.int = values[2];*/
     c = 1;
   });
-}*/
+}
