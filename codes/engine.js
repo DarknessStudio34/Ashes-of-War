@@ -23,8 +23,8 @@ function cmds (){
 }
 var loading = {};
 function preload (){
-  loading.tld20_9: loadImage('assets/tldLoad.20.9.png'),
-  loading.tld16_9: loadImage('assets/tldLoad.16.9.png')
+  loading.tld20_9 = loadImage('assets/tldLoad.20.9.png'),
+  loading.tld16_9 = loadImage('assets/tldLoad.16.9.png')
 }
 
 function mouseClicked (){
