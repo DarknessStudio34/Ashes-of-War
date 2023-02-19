@@ -78,3 +78,21 @@ function toggleFullScreen() {
     }  
   } 
 } 
+
+//gerador de particulas
+var particFun = function (numPart, xInic, yInci, xFin, yFin){
+  for (var i = 0; i != numPart; i++){
+     var x = xInic, y = yInci;
+     rect(x, y, 1, 1);
+     if (xInic > xFin){
+       for (; x != xFin; x -= 5){}
+     } else {
+         for(; x != xFin; x += 5){}
+       }
+     if (yInci > yFin){
+       for(; y != yFin; y -= 5){}
+     } else {
+          for(; y != yFin; y += 5){}
+       }    
+  }
+}
