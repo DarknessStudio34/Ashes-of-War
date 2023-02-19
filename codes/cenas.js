@@ -11,17 +11,20 @@ function cenarios (){
    else if (propor == 16.9){
      if(c == 0){
        background (loading.tld16_9)
-       tld16_1();
+       //tld16_1();
      }
    }
 }
-function tld20_1 (){
-  setTimeout(function() {
+var graphics = {};
+/*function tld20_1 (){
+  var img1 = loadImage('assets/1.png');
+  var img2 = loadImage('assets/2.png');
+  var img3 = loadImage('assets/3.png');
+  
+  Promise.all([img1, img2, img3]).then(function(values) {
+    graphics.bg = values[0];
+    graphics.bt = values[1];
+    graphics.int = values[2];
     c = 1;
-  }, 3000);
-} 
-function tld16_1 (){
-  setTimeout(function() {
-    c = 1;
-  }, 3000);
-}  
+  });
+}*/
