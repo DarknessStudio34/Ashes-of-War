@@ -16,12 +16,12 @@ function cenarios (){
    }
 }
 function tld20_1 (){
-  setTimeOut(
+  setTimeout(function() {
     c = 1;
-  )
+  }, 3000);
 } 
 function tld16_1 (){
-  setTimeOut(
+  setTimeout(function() {
     c = 1;
-  )
+  }, 3000);
 }  
