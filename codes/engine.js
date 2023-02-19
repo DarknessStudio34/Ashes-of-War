@@ -41,7 +41,9 @@ function frames (){
   if (c == 1 || c == 1.2){fill (220)}
   text (frameCount, 10, 10);
   text (mouseY, 40, 30);
-  text (mouseX, 40, 10)
+  text (mouseX, 40, 10);
+  text (screenX, 10, 30);
+  text (screenY, 10, 50);
 }
 
 function screenConfig (){
