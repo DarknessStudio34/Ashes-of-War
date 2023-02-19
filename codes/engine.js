@@ -1,5 +1,5 @@
 function setup (){
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(screenX, screenY);
 }
 
 var screenX = window.screen.width, screenY = window.screen.height
