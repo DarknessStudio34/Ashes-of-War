@@ -2,12 +2,16 @@ function setup (){
   createCanvas(screenX, screenY);
   button = createButton('');
   button.style('background-image', 'url(assets/int_un/bt_jogar.png)');
-  button.mousePressed((){jg = true});
+  button.mousePressed(nG);
   button.position(screenX * 0.80, screenY * 0.35);
   button.size(screenX * 0.20, screenX * 0.20)
 }
 var jg = false;
 var screenX = window.screen.width, screenY = window.screen.height
+
+function nG () {
+  jg = true
+}
 
 function draw (){
   screenConfig();
