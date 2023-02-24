@@ -17,25 +17,34 @@ function cenarios (){
        }
    }
 }
+
+
 var graphics = {};
-function tld20_1 (){
+
+function tld20_1() {
   var img1 = loadImage('assets/20_9/int/mp_bg.png');
-  
-  Promise.all([img1]).then(function(values) {
+  var img2 = loadImage('assets/int_un/int-fl-Pai.png');
+  var img3 = loadImage('assets/int_un/int-fl-Mike-1sc.png');
+
+  Promise.all([img1, img2, img3]).then(function(values) {
     graphics.bg = values[0];
-    /*graphics.bt = values[1];
-    graphics.int = values[2];*/
+    graphics.fl1 = values[1];
+    graphics.fl2 = values[2];
     c = 1;
   });
 }
 
-function tld16_1 (){
+
+
+function tld16_1() {
   var img1 = loadImage('assets/16_9/int/mp_bg.png');
-  
-  Promise.all([img1]).then(function(values) {
+  var img2 = loadImage('assets/int_un/int-fl-Pai.png');
+  var img3 = loadImage('assets/int_un/int-fl-Mike-1sc.png');
+
+  Promise.all([img1, img2, img3]).then(function(values) {
     graphics.bg = values[0];
-    /*graphics.bt = values[1];
-    graphics.int = values[2];*/
+    graphics.fl1 = values[1];
+    graphics.fl2 = values[2];
     c = 1;
   });
 }
