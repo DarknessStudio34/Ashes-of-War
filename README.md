@@ -10,7 +10,7 @@
  <p>| Windows:  </p>
       
  <p>| Ou se preferir vc pode rodar a versão online (apartir do navegador) aqui:
-    <p></p>
+    <p> https://darknessstudio34.github.io/Ashes-of-War/ </p>
   <h5>  Pode haver algumas diferenças entre a versão web e aplicativo. E também um pequeno atraso na atualização das versões executáveis, tentarei atualizar sempre que possivel.
  
 Caso tenha alguma dúvida ou não tenha funcionado, entre em contato em DarknessStudio34@gmail.com</h5>
