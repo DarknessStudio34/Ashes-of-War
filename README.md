@@ -1,5 +1,5 @@
 
-<p>Olá🤘 Beta v0.0.0.1</p>
+<p>Olá🤘 Beta v0.0.1.2</p>
 
 <h2>-> o que temos até agora:</h2>
 
