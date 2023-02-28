@@ -23,28 +23,31 @@ var graphics = {};
 
 function tld20_1() {
   var img1 = loadImage('assets/20_9/int/mp_bg.png');
-  var img2 = loadImage('assets/int_un/int-fl-Pai.png');
-  var img3 = loadImage('assets/int_un/int-fl-Mike-1sc.png');
+  var img1 = loadImage('assets/16_9/int/Mike-fl-scene1.png');
+  var img2 = loadImage('assets/int_un/Allan-fl-scene1.png');
+  var img3 = loadImage('assets/int_un/Pai-fl-scene1.png');
 
-  Promise.all([img1, img2, img3]).then(function(values) {
+  Promise.all([img0, img1, img2, img3]).then(function(values) {
     graphics.bg = values[0];
-    graphics.fl1 = values[1];
-    graphics.fl2 = values[2];
+    graphics.flM = values[1];
+    graphics.flA = values[2];
+    graphics.flP = values[3];
     c = 1;
   });
 }
 
 
-
 function tld16_1() {
-  var img1 = loadImage('assets/16_9/int/mp_bg.png');
-  var img2 = loadImage('assets/int_un/int-fl-Pai.png');
-  var img3 = loadImage('assets/int_un/int-fl-Mike-1sc.png');
+  var img0 = loadImage('assets/16_9/int/mp_bg.png');
+  var img1 = loadImage('assets/int_un/Mike-fl-scene1.png');
+  var img2 = loadImage('assets/int_un/Allan-fl-scene1.png');
+  var img3 = loadImage('assets/int_un/Pai-fl-scene1.png');
 
-  Promise.all([img1, img2, img3]).then(function(values) {
+  Promise.all([img0, img1, img2, img3]).then(function(values) {
     graphics.bg = values[0];
-    graphics.fl1 = values[1];
-    graphics.fl2 = values[2];
+    graphics.flM = values[1];
+    graphics.flA = values[2];
+    graphics.flP = values[3];
     c = 1;
   });
 }
