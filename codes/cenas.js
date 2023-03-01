@@ -23,7 +23,7 @@ var graphics = {};
 
 function tld20_1() {
   var img1 = loadImage('assets/20_9/int/mp_bg.png');
-  var img1 = loadImage('assets/16_9/int/Mike-fl-scene1.png');
+  var img1 = loadImage('assets/int_un/Mike-fl-scene1.png');
   var img2 = loadImage('assets/int_un/Allan-fl-scene1.png');
   var img3 = loadImage('assets/int_un/Pai-fl-scene1.png');
 
