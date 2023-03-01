@@ -34,7 +34,7 @@ function preload (){
 var btCl
 function mouseClicked (){
   btCl = true
-  setTimeOut(function (){btCl = false})
+  setTimeOut(function (){btCl = false}, 50)
   if(mouseX > screenX * 0.90 && mouseY < screenY * 0.10){
     toggleFullScreen();
     fscreen = true;
