@@ -32,9 +32,12 @@ function preload (){
   loading.tld16_9 = loadImage('assets/tldLoad.16.9.png')
 }
 var btCl
+function btClik (){
+  setTimeOut(function (){btCl = false}, 50)
+}
 function mouseClicked (){
   btCl = true
-  setTimeOut(function (){btCl = false}, 50)
+  btclik()
   if(mouseX > screenX * 0.90 && mouseY < screenY * 0.10){
     toggleFullScreen();
     fscreen = true;
