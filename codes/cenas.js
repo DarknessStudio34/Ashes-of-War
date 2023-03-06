@@ -6,8 +6,8 @@ function cenarios (){
        tld20_1()
      } else if (c == 1){
          background(graphics.bg)
-         image(graphics.btJ, screenX * 0.80, screenY * 0.25, screenY * 0.1778, screenY * 0.1778);
-         image(graphics.btO, screenX * 0.80, screenY * 0.75, screenY * 0.1778, screenY * 0.1778);
+         image(graphics.btJ, screenX * 0.80, screenY * 0.25, screenY * 0.5, screenY * 0.5);
+         image(graphics.btO, screenX * 0.80, screenY * 0.55, screenY * 0.5, screenY * 0.5);
        }
    }
    else if (propor == 16.9){
