@@ -26,6 +26,8 @@ function tld20_1() {
   var img1 = loadImage('assets/int_un/Mike-fl-scene1.png');
   var img2 = loadImage('assets/int_un/Allan-fl-scene1.png');
   var img3 = loadImage('assets/int_un/Pai-fl-scene1.png');
+  var img4 = loadImage('assets/int_un/bt_jogar.png');
+  var img5 = loadImage('assets/int_un/bt_options.png')
 
   Promise.all([img0, img1, img2, img3]).then(function(values) {
     graphics.bg = values[0];
