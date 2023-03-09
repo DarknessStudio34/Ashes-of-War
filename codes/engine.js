@@ -49,7 +49,7 @@ function mouseClicked (){
 
 function frames (){
   fill (0);
-  if (c == 1 || c == 1.2){fill (220)}
+  if (c == 1 || c == 1.2 || c == 1.1){fill (220)}
   text (frameCount, 10, 10);
   text (mouseY, 40, 30);
   text (mouseX, 40, 10);
