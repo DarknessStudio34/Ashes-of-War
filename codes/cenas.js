@@ -62,6 +62,37 @@ function tld20_1() {
 }
 
 function tld16_1() {
+  // Criar um novo Web Worker
+  worker = new Worker('image-loader.js');
+
+  // Enviar a lista de imagens para o Web Worker
+  var imageList = [
+    'assets/16_9/int/mp_bg.png',
+    'assets/int_un/Mike-fl-scene1.png',
+    'assets/int_un/Allan-fl-scene1.png',
+    'assets/int_un/Pai-fl-scene1.png',
+    'assets/int_un/bt_jogar.png',
+    'assets/int_un/bt_options.png'
+  ];
+  worker.postMessage(imageList);
+
+  // Adicionar um ouvinte de eventos para receber as imagens processadas
+  worker.onmessage = function(event) {
+    graphics.bg = event.data[0];
+    graphics.flM = event.data[1];
+    graphics.flA = event.data[2];
+    graphics.flP = event.data[3];
+    graphics.btJ = event.data[4];
+    graphics.btO = event.data[5];
+    c = 1;
+  };
+}
+
+
+
+
+
+function tld16_1() {
   var img0 = loadImage('assets/16_9/int/mp_bg.png');
   var img1 = loadImage('assets/int_un/Mike-fl-scene1.png');
   var img2 = loadImage('assets/int_un/Allan-fl-scene1.png');
