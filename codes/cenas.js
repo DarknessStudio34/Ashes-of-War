@@ -32,25 +32,52 @@ function cenarios (){
 
 
 var graphics = {};
+var worker;
 
 function tld20_1() {
-  var img0 = loadImage('assets/20_9/int/mp_bg.png');
-  var img1 = loadImage('assets/int_un/Mike-fl-scene1.png');
-  var img2 = loadImage('assets/int_un/Allan-fl-scene1.png');
-  var img3 = loadImage('assets/int_un/Pai-fl-scene1.png');
-  var img4 = loadImage('assets/int_un/bt_jogar.png');
-  var img5 = loadImage('assets/int_un/bt_options.png')
+  // Criar um novo Web Worker
+  worker = new Worker('image-loader.js');
 
-  Promise.all([img0, img1, img2, img3, img4, img5]).then(function(values) {
-    graphics.bg = values[0];
-    graphics.flM = values[1];
-    graphics.flA = values[2];
-    graphics.flP = values[3];
-    graphics.btJ = values[4];
-    graphics.btO = values[5];
+  // Enviar a lista de imagens para o Web Worker
+  var imageList = [
+    'assets/20_9/int/mp_bg.png',
+    'assets/int_un/Mike-fl-scene1.png',
+    'assets/int_un/Allan-fl-scene1.png',
+    'assets/int_un/Pai-fl-scene1.png',
+    'assets/int_un/bt_jogar.png',
+    'assets/int_un/bt_options.png'
+  ];
+  worker.postMessage(imageList);
+
+  // Adicionar um ouvinte de eventos para receber as imagens processadas
+  worker.onmessage = function(event) {
+    graphics.bg = event.data[0];
+    graphics.flM = event.data[1];
+    graphics.flA = event.data[2];
+    graphics.flP = event.data[3];
+    graphics.btJ = event.data[4];
+    graphics.btO = event.data[5];
     c = 1;
+  };
+}
+
+// Arquivo do Web Worker (image-loader.js)
+self.onmessage = function(event) {
+  var imageList = event.data;
+
+  // Carregar todas as imagens em paralelo usando Promise.all()
+  Promise.all(imageList.map(loadImageAsBitmap)).then(function(values) {
+    // Enviar as imagens processadas de volta para o arquivo principal do p5.js
+    self.postMessage(values);
   });
 }
+
+function loadImageAsBitmap(imageUrl) {
+  return fetch(imageUrl)
+    .then(response => response.blob())
+    .then(blob => createImageBitmap(blob));
+}
+
 
 
 function tld16_1() {
