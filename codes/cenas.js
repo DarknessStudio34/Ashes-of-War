@@ -63,7 +63,7 @@ function tld20_1() {
 
 function tld16_1() {
   // Criar um novo Web Worker
-  worker = new Worker('image-loader.js');
+  worker = new Worker('codes/image-loader.js');
 
   // Enviar a lista de imagens para o Web Worker
   var imageList = [
