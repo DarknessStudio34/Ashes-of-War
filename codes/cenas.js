@@ -61,25 +61,6 @@ function tld20_1() {
   };
 }
 
-// Arquivo do Web Worker (image-loader.js)
-self.onmessage = function(event) {
-  var imageList = event.data;
-
-  // Carregar todas as imagens em paralelo usando Promise.all()
-  Promise.all(imageList.map(loadImageAsBitmap)).then(function(values) {
-    // Enviar as imagens processadas de volta para o arquivo principal do p5.js
-    self.postMessage(values);
-  });
-}
-
-function loadImageAsBitmap(imageUrl) {
-  return fetch(imageUrl)
-    .then(response => response.blob())
-    .then(blob => createImageBitmap(blob));
-}
-
-
-
 function tld16_1() {
   var img0 = loadImage('assets/16_9/int/mp_bg.png');
   var img1 = loadImage('assets/int_un/Mike-fl-scene1.png');
