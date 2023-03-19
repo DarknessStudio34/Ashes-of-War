@@ -1,4 +1,5 @@
-const worker = new Worker('worker.js')
+const worker = new Worker("codes/worker.js");
+
 var c = 0;
 
 function cenarios (){
