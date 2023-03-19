@@ -1,4 +1,4 @@
-
+const worker = new Worker('worker.js')
 var c = 0;
 
 function cenarios (){
