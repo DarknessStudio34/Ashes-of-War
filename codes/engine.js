@@ -37,7 +37,7 @@ function btClik (){
 }
 function mouseClicked (){
   btCl = true
-  btclik()
+  btClik()
   if(mouseX > screenX * 0.90 && mouseY < screenY * 0.10){
     toggleFullScreen();
     fscreen = true;
