@@ -1,3 +1,11 @@
+onmessage = function (event) {
+  if (event.data === "executar_tld20_1") {
+    tld20_1();
+  }
+}
+
+
+
 onmessage = function(e) {
   if (e.data.type === 'start_tld20_1') {
     if (e.data.ld === 1) {
