@@ -6,7 +6,7 @@ function cenarios (){
    if (propor == 20.9){
      if(c == 0){
        background (loading.tld20_9);
-       tld20_1();
+       worker.postMessage("executar_tld20_1")
      } else if (c == 1){
          background(graphics.bg);
          image(graphics.btJ, screenX * 0.80, screenY * 0.25, screenY * 0.35, screenY * 0.35);
