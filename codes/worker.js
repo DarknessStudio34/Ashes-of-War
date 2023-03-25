@@ -16,6 +16,7 @@ function tld20_1() {
       btJ: values[4],
       btO: values[5]
     };
+    consele.log('promisse worker funcionando');
     self.postMessage(graphics);
     self.postMessage(1);
     // Envia a variável graphics para a página principal
