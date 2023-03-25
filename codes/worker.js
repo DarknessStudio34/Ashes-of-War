@@ -1,3 +1,4 @@
+console.log('worker funcionando');
 function tld20_1() {
   var img0 = loadImage('assets/20_9/int/mp_bg.png');
   var img1 = loadImage('assets/int_un/Mike-fl-scene1.png');
